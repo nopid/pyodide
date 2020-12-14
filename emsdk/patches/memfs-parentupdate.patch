@@ -1,0 +1,11 @@
+--- a/emsdk/fastcomp/emscripten/src/library_memfs.js
++++ b/emsdk/fastcomp/emscripten/src/library_memfs.js
+
+@@ -88,6 +88,7 @@
+       // add the new node to the parent
+       if (parent) {
+         parent.contents[name] = node;
++        parent.timestamp = node.timestamp;
+       }
+       return node;
+     },
