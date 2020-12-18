@@ -1,0 +1,10 @@
+package:
+  name: testdlsymbis
+  version: "0.1"
+source:
+  path: testdlsymbis
+build:
+  cflags: -s EXPORT_ALL=1 -s LINKABLE=1 -shared -s WASM=1
+test:
+  imports:
+  - testdlsymbis

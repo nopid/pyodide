@@ -1,0 +1,8 @@
+package:
+  name: hello
+  version: "0.1"
+source:
+  path: hello
+test:
+  imports:
+  - hello

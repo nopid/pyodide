@@ -1,0 +1,10 @@
+package:
+  name: testdlsymter
+  version: "0.1"
+source:
+  path: testdlsymter
+build:
+  cflags: -s EXPORT_ALL=1 -s LINKABLE=1 -shared -s WASM=1
+test:
+  imports:
+  - testdlsymter
